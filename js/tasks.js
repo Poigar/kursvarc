@@ -1,3 +1,6 @@
+var levelColors = ["#43ACBB", "#43BB52", "#D1C42A", "#D92F2F", "#C0319B", "#373897"]
+var scoreNeeded = [3, 4, 5, 5, 6, 6, 6, 6];
+
 var T = [
     [ // 1 
         ["vads", "vac", ""],
@@ -5,18 +8,18 @@ var T = [
         ["brilles", "briles", ""],
         ["poga", "puaga", ""],
         ["problēma", "proglēma", ""],
-        ["bungas", "bunkas", ""],
-        ["banka", "bannka", ""]
-        ["pie mums", "pie mumsīm"],
-        ["pie jums", "pie jumsīm"]
+        ["varde", "varte", ""],
+        ["banka", "bannka", ""],
+        ["pie mums", "pie mumsīm", ""],
+        ["pie jums", "pie jumsīm", ""]
     ],
     [ // 2
         ["gulta", "gūlta", ""],
         ["bulta", "būlta", ""],
         ["kūlenis", "kulenis", ""],
         ["kultenis", "kūltenis", ""],
-        ["tualete", "tolete"],
-        ["tualete", "toalete"],
+        ["tualete", "tolete", ""],
+        ["tualete", "toalete", ""],
         ["mežs", "mešs", ""],
         ["kods", "kots", ""],
         ["acis", "aces", ""],
@@ -66,13 +69,14 @@ var T = [
         ["Mikum Ulmanim", "Mikusam Ulmanim", "Kam? (Mikus Ulmanis)"],
         ["Ingusam Kalniņam", "Ingum Kalniņam", "Kam? (Inguss Kalniņš)"],
         ["mezdams", "mesdams", ""],
-        ["nesdams", "nesdams", ""],
+        ["nesdams", "nezdams", ""],
         ["vilkdams", "vilgdams", ""],
         ["vezdams", "vesdams", ""],
         ["laizdams", "laisdams", ""],
         ["vests", "vezts", ""],
         ["lauzts", "lausts", ""],
-        ["lauzdams", "lausdams", ""]
+        ["lauzdams", "lausdams", ""],
+        ["želatīns", "želantīns"]
     ],
     [ // 8
         ["fotografēt", "fotogrāfēt", ""],
