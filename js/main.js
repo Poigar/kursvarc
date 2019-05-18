@@ -5,14 +5,13 @@ function startGame(){
 }
 
 function toggleOptions(){
-    $("#options").toggleClass("hidden");
+    fadeTo("A");
+    // $("#options").toggleClass("hidden");
 }
 
 function init(){
     
     loadData();
-
-    console.log(gameData);
 
     if(getOption("arrows")) $(".arrows-option").addClass("checkbox--enabled");
     if(getOption("sound")) $(".sound-option").addClass("checkbox--enabled");

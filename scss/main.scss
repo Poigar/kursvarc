@@ -1,7 +1,9 @@
 // This is the file that gets included in the index.html file
 // It requires all the other small development files
 
+@import "transitions";
 @import "css_reset";
+@import "animate_css";
 @import "helpers";
 @import "variables";
 

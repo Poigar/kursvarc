@@ -30,6 +30,12 @@
             transform: translateX(2px);
             // border: 1px solid red;
         }
+
+        transition: transform 0.25s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
     
     .settings-btn{
@@ -39,17 +45,35 @@
         top: 2vw;
         left: 2vw;
         color: $orange;
+        transition: transform 0.15s ease;
         // border: 1px solid red;
 
         i{
             font-size: 1.8vw;
         }
         z-index: 10;
+
+        &:hover{
+            opacity: 0.7;
+            transform: rotateZ(45deg);
+        }
+
+
+        &:active {
+            transform: rotateZ(45deg) scale(1.2);
+        }
     }
     
     .instructions{
         color: rgb(156, 156, 156);
         margin: 2vw 0;
         margin-bottom: 6vw;
+    }
+
+    .copyright{
+        position: absolute;
+        bottom: 2vw;
+        left: 2vw;
+        color: $orange;
     }
 }
