@@ -34,6 +34,7 @@ function updateBar(){
 }
 
 function nextLevel(){
+
     lvl++;
     tasksUsed = 0;
     score = 0;
@@ -55,6 +56,7 @@ function nextLevel(){
     if(lvl>0){
         playLevelup();
     }
+
 }
 
 function startGame(){
@@ -69,6 +71,15 @@ function startGame(){
 
     nextLevel();
     generateNextTask();
+}
+
+function gameOver(){
+    $("#game_over").removeClass("hidden");
+    $(".pyro").removeClass("hidden");
+}
+
+function restartGame(){
+    window.location.reload();
 }
 
 function toggleOptions(){
@@ -114,9 +125,21 @@ function choose(x){
     updateBar();
     
     setTimeout(function(){
-        if( score==scoreNeeded[lvl] ) nextLevel();
+    
+
+        if( score==scoreNeeded[lvl] ){
+            
+            if(lvl == T.length-1){
+                gameOver();
+                return false;
+            }else{
+                nextLevel();
+            }
+
+        }
         generateNextTask();
     }, 500);
+
 }
 
 function init(){
