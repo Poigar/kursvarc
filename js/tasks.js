@@ -1,5 +1,6 @@
-var levelColors = ["#43ACBB", "#43BB52", "#D1C42A", "#D92F2F", "#C0319B", "#373897"]
-var scoreNeeded = [3, 6, 6, 7, 8, 8, 9, 10];
+var levelColors = ["#43ACBB", "#43BB52", "#D1C42A", "#D92F2F", "#C0319B", "img/kalni.jpeg", "img/pilseta.jpg", "img/ezerpilseta.jpeg"]
+//var scoreNeeded = [3, 6, 6, 7, 8, 8, 9, 10];
+var scoreNeeded = [2, 2, 2, 2, 2, 4, 4, 4];
 
 var T = [
     [ // 1 
