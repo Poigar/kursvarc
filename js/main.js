@@ -59,6 +59,9 @@ function nextLevel(){
 
 function startGame(){
 
+    lvl = -1;
+    task = -1;
+    
     fadeTo("game","menu");
     currentSection = "game";
 
