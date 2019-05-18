@@ -4,6 +4,10 @@ h1{
     color: rgb(255, 115, 0);
     font-weight: bold;
     font-size: 8vw;
+
+
+    @extend %orange_gradient_text;
+    
 }
 
 .play-btn{
@@ -15,8 +19,7 @@ h1{
     border: none;
     color: white;
     font-size: 2em;
-
-    @extend %orange_gradient;
+    background: $orange_gradient;
 }
 
 .settings-btn{
@@ -25,4 +28,9 @@ h1{
     position: absolute;
     top: 2vw;
     left: 2vw;
+    color: $orange;
+}
+
+.instructions{
+    color: rgb(156, 156, 156);
 }

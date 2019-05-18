@@ -359,7 +359,7 @@ textarea {
 .green {
   background-color: green !important; }
 
-.section, .play-btn {
+h1 {
   background: linear-gradient(to right, #ff5100, #df7919);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
@@ -377,21 +377,24 @@ h1 {
   border-radius: 50%;
   border: none;
   color: white;
-  font-size: 2em; }
+  font-size: 2em;
+  background: linear-gradient(to right, #ff5100, #df7919); }
 
 .settings-btn {
   background: none;
   border: none;
   position: absolute;
   top: 2vw;
-  left: 2vw; }
+  left: 2vw;
+  color: #e15100; }
+
+.instructions {
+  color: #9c9c9c; }
 
 body {
   width: 100vw;
   height: 100vh;
-  overflow: hidden; }
-
-h1, h2, h3, h4, h5, h6 {
+  overflow: hidden;
   font-family: "Ubuntu", Arial; }
 
 /*# sourceMappingURL=main.css.map */
