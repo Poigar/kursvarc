@@ -6,6 +6,8 @@ var flag = [];
 var tasksUsed = 0;
 var score = 0;
 
+var canAnswer = false;
+
 var currentSection = "menu";
 
 function generateNextTask(){
@@ -22,6 +24,8 @@ function generateNextTask(){
     correctSide = Math.floor(Math.random() * 2 );
     document.getElementById("choice" + correctSide).innerHTML = T[lvl][task][0];
     document.getElementById("choice" + (correctSide+1)%2 ).innerHTML = T[lvl][task][1];
+
+    canAnswer = true;
 }
 
 function updateBar(){
@@ -62,6 +66,9 @@ function toggleOptions(){
 
 function choose(x){
     if( !currentSection=="game" ) return;
+    if( !canAnswer ) return;
+
+    canAnswer = false;
 
     if( correctSide == x ){
         score++;
@@ -71,7 +78,7 @@ function choose(x){
             document.getElementById("choose" + x).style.backgroundColor = "#fafafa";
         }, 300);
     } else {
-        score = Math.max(0, score-1);
+        score = 0;
         console.log("wrong");
         //document.getElementById("level-bar-container").style.backgroundColor = "#E54343";
         document.getElementById("choose" + x).style.backgroundColor = "#E54343";
@@ -91,21 +98,6 @@ function choose(x){
         generateNextTask();
     }, 500);
 }
-
-$(window).keyup(function(event) {
-    switch(event.which) {
-        case 37:
-            event.preventDefault();
-            choose(0);
-            break;
-        case 39:
-            event.preventDefault();
-            choose(1)
-            break;
-        default:
-            break;
-    }
-});
 
 function init(){
     
@@ -151,6 +143,21 @@ $(document).ready(function(){
             if(currentSection=="options"){
                 fadeTo("menu","options");
             }
+        }
+    });
+
+    $(window).keyup(function(event) {
+        switch(event.which) {
+            case 37:
+                event.preventDefault();
+                choose(0);
+                break;
+            case 39:
+                event.preventDefault();
+                choose(1);
+                break;
+            default:
+                break;
         }
     });
 
