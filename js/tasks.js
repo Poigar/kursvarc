@@ -35,7 +35,11 @@ var T = [
         ["nākamais pasākums", "nākošais pasākums", ""],
         ["košs", "kožs", ""],
         ["pašreiz", "patreiz", ""],
-        ["pēdiņas", "ķepiņas", 'Kā sauc šo — „” ?']
+        ["pēdiņas", "ķepiņas", 'Kā sauc šo — „” ?'],
+        ["kaut kas", "kautkas", ""],
+        ["nezin ko", "nezinko", ""],
+        ["diez cik", "diezcik", ""],
+        ["ikviens", "ik viens", ""]
     ],
     [ // 5
         ["pulkstenis", "pulkstens", ""],
@@ -45,6 +49,7 @@ var T = [
         ["asmens", "asmenis", ""],
         ["akmens", "akmenis", ""],
         ["ūdens", "ūdenis", ""],
+        ["diezgan", "diez gan", ""]
     ],
     [ // 6
         ["Saeima", "Saima", ""],
