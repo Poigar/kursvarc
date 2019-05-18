@@ -26,7 +26,7 @@ var T = [
         ["acis", "aces", ""],
         ["acis", "ači", ""],
         ["gulbis", "gūlbis", ""],
-        ["saldējums", "saldeijums", ""]
+        ["saldējums", "saldeijums", ""],
         ["ledusskapis", "leduskapis", ""]
     ],
     [ // 3
@@ -71,12 +71,13 @@ var T = [
         ["flomāsters", "flomasters", ""],
         ["spilgts", "spilkts", ""],
         ["nule", "nulle", '"tikko"'],
-        ["eņģlis", "enģelis", ""],
+        ["eņģelis", "enģelis", ""],
         ["senči", "seņči", ""],
         ["peļķe", "pelķe", ""],
         ["eņģes", "enģes", ""],
         ["patstāvīgs cilvēks", "pastāvīgs cilvēks", ""],
-        ["pastāvīgas sūdzības", "patstāvīgas sūdzības", ""]
+        ["pastāvīgas sūdzības", "patstāvīgas sūdzības", ""],
+        ["akmens siena", "akmeņa siena", ""]
     ],
     [ // 7
         ["Pēterim Liepam", "Pēterim Liepai", "Kam? (Pēteris Liepa)"],
