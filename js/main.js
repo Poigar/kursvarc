@@ -120,12 +120,19 @@ $(document).ready(function(){
 
     init();
 
-    playMusic();
+    if(getOption("music")!==false){
+        playMusic();
+    }
 
     $(".checkbox").click(function(){
 
+        // if(getOption("music")==false){
+        //     stopMusic();
+        // }
+
         $(this).toggleClass("checkbox--enabled");
         var optionData = $(this).data("option");
+
 
         if($(this).hasClass("checkbox--enabled")){
             gameData["options"][optionData] = true;

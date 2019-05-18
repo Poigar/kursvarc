@@ -8,3 +8,7 @@ function playMusic(){
 function stopMusic(){
     backgroundMusic.stop();
 }
+
+function paused(){
+    return backgroundMusic.paused;
+}
