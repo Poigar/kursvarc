@@ -1,0 +1,31 @@
+#options{
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    .option{
+        display: flex;
+        align-items: center;
+        margin-bottom: 2vw;
+        color: $gray;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .checkbox{
+        width: 2vw;
+        height: 2vw;
+        border: 1px solid $orange;
+        margin-right: 1vw;
+        border-radius: 2px;
+    }
+
+    .checkbox--enabled{
+        background-color: $orange;
+    }
+}

@@ -1,46 +1,54 @@
 // HOME
 
-h1{
-    color: rgb(255, 115, 0);
-    font-weight: bold;
-    font-size: 8vw;
-
-
-    @extend %orange_gradient_text;
+#menu{
+    h1{
+        color: rgb(255, 115, 0);
+        font-weight: bold;
+        font-size: 8vw;
     
-}
-
-.play-btn{
-    width: 7vw;
-    height: 7vw;
-    display: block;
-    margin: auto;
-    border-radius: 50%;
-    border: none;
-    color: white;
-    background: $orange_gradient;
     
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    i{
-        font-size: 2.2vw;
-        // border: 1px solid red;
+        @extend %orange_gradient_text;
+        
     }
-}
+    
+    .play-btn{
+        width: 7vw;
+        height: 7vw;
+        display: block;
+        margin: auto;
+        border-radius: 50%;
+        border: none;
+        color: white;
+        background: $orange_gradient;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        i{
+            font-size: 2.2vw;
+            // border: 1px solid red;
+        }
+    }
+    
+    .settings-btn{
+        background: none;
+        border: none;
+        position: absolute;
+        top: 2vw;
+        left: 2vw;
+        color: $orange;
+        // border: 1px solid red;
 
-.settings-btn{
-    background: none;
-    border: none;
-    position: absolute;
-    top: 2vw;
-    left: 2vw;
-    color: $orange;
-}
-
-.instructions{
-    color: rgb(156, 156, 156);
-    margin: 2vw 0;
-    margin-bottom: 6vw;
+        i{
+            font-size: 1.8vw;
+        }
+        z-index: 10;
+    }
+    
+    .instructions{
+        color: rgb(156, 156, 156);
+        margin: 2vw 0;
+        margin-bottom: 6vw;
+    }
 }

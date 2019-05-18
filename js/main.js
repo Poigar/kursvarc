@@ -2,4 +2,6 @@ function startGame(){
     $("#game").removeClass("hidden");
 }
 
-function toggleOptions(){}
+function toggleOptions(){
+    $("#options").toggleClass("hidden");
+}

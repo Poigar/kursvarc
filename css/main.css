@@ -359,17 +359,16 @@ textarea {
 .green {
   background-color: green !important; }
 
-h1 {
+#menu h1 {
   background: linear-gradient(to right, #ff5100, #df7919);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-h1 {
+#menu h1 {
   color: #ff7300;
   font-weight: bold;
   font-size: 8vw; }
-
-.play-btn {
+#menu .play-btn {
   width: 7vw;
   height: 7vw;
   display: block;
@@ -381,18 +380,19 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center; }
-  .play-btn i {
+  #menu .play-btn i {
     font-size: 2.2vw; }
-
-.settings-btn {
+#menu .settings-btn {
   background: none;
   border: none;
   position: absolute;
   top: 2vw;
   left: 2vw;
-  color: #e15100; }
-
-.instructions {
+  color: #e15100;
+  z-index: 10; }
+  #menu .settings-btn i {
+    font-size: 1.8vw; }
+#menu .instructions {
   color: #9c9c9c;
   margin: 2vw 0;
   margin-bottom: 6vw; }
@@ -421,6 +421,29 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     z-index: 10; }
+
+#options {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  #options .option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vw;
+    color: #9a9a9a; }
+    #options .option:last-child {
+      margin-bottom: 0; }
+  #options .checkbox {
+    width: 2vw;
+    height: 2vw;
+    border: 1px solid #e15100;
+    margin-right: 1vw;
+    border-radius: 2px; }
+  #options .checkbox--enabled {
+    background-color: #e15100; }
 
 body {
   width: 100vw;
