@@ -49,4 +49,13 @@ body{
             transform: rotateZ(45deg) scale(1.2);
         }
     }
+
+    @media screen and (max-width: 765px){
+        .settings-btn{
+            top: 3vw;
+            i{
+                font-size: 10vw;
+            }
+        }
+    }
 }

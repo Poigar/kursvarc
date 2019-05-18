@@ -34,4 +34,32 @@
     .checkbox--enabled{
         background-color: $orange;
     }
+    
+    @media screen and (max-width: 768px){
+        .option{
+            font-size: 5vw;
+            margin-bottom: 5vw;
+        }
+
+        .checkbox{
+            width: 10vw;
+            height: 10vw;
+            margin-right: 4vw;
+            border-width: 2px;
+        }
+    }
+
+    @media screen and (min-width: 1440px){
+        .option{
+            font-size: 1.8vw;
+            margin-bottom: 2vw;
+        }
+
+        .checkbox{
+            width: 3vw;
+            height: 3vw;
+            margin-right: 2vw;
+            border-width: 2px;
+        }
+    }
 }
