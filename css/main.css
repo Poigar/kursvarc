@@ -359,13 +359,15 @@ textarea {
 .green {
   background-color: green !important; }
 
-h1 {
-  color: #ff7300;
-  font-weight: bold;
-  font-size: 8vw;
+.section, .play-btn {
   background: linear-gradient(to right, #ff5100, #df7919);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
+
+h1 {
+  color: #ff7300;
+  font-weight: bold;
+  font-size: 8vw; }
 
 .play-btn {
   width: 5vw;
@@ -374,9 +376,15 @@ h1 {
   margin: auto;
   border-radius: 50%;
   border: none;
-  background: linear-gradient(to right, #ff5100, #df7919);
   color: white;
   font-size: 2em; }
+
+.settings-btn {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 2vw;
+  left: 2vw; }
 
 body {
   width: 100vw;

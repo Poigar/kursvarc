@@ -1,3 +1,9 @@
 // Variables
 
-$gradient--orange: linear-gradient(to right, rgb(255, 81, 0), rgb(223, 121, 25));
+
+
+%orange_gradient {
+    background: linear-gradient(to right, rgb(255, 81, 0), rgb(223, 121, 25));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
