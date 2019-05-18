@@ -1,6 +1,4 @@
-var backgroundMusic = new Audio("audio/bg_music.mp3");
-backgroundMusic.volume = 0.3;
-backgroundMusic.loop = true;
+var backgroundMusic = undefined;
 
 var clickSound = new Audio("audio/click.wav");
 clickSound.volume = 0.4;
@@ -15,7 +13,15 @@ var levelupSound = new Audio("audio/levelup.wav");
 levelupSound.volume = 0.7;
 
 function playMusic(){
-    backgroundMusic.play();
+
+    if(backgroundMusic === null || backgroundMusic === undefined){
+        backgroundMusic = new Audio("audio/bg_music.mp3");
+        backgroundMusic.volume = 0.3;
+        backgroundMusic.loop = true;
+        backgroundMusic.play();
+    }else{
+        backgroundMusic.play();
+    }
 }
 
 function stopMusic(){
