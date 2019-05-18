@@ -1,5 +1,5 @@
 var levelColors = ["#43ACBB", "#43BB52", "#D1C42A", "#D92F2F", "#C0319B", "#373897"]
-var scoreNeeded = [3, 4, 6, 6, 6, 6, 6, 6];
+var scoreNeeded = [3, 6, 6, 7, 8, 8, 9, 10];
 
 var T = [
     [ // 1 
@@ -25,18 +25,22 @@ var T = [
         ["kods", "kots", ""],
         ["acis", "aces", ""],
         ["acis", "ači", ""],
-        ["gulbis", "gūlbis", ""]
+        ["gulbis", "gūlbis", ""],
+        ["saldējums", "saldeijums", ""]
+        ["ledusskapis", "leduskapis", ""]
     ],
     [ // 3
         ["pie manis", "pie manīm", ""],
         ["pie tevis", "pie tevīm", ""],
         ["nulle", "nule", "Kas tas — 0 ?"],
-        ["logs", "loks", ""],
+        ["logs", "loks", "Stikla caurums māju sienās"],
         ["numurs", "nummurs", ""],
         ["treniņš", "trenniņš", ""],
         ["treneris", "trenneris", ""],
         ["jebkas", "jeb kas", ""],
-        ["tikko", "tiko", ""]
+        ["tikko", "tiko", ""],
+        ["vislabākais", "viss labākais", ""],
+        ["visskaistākais", "viskaistākais", ""]
     ],
     [ // 4
         ["nākamais pasākums", "nākošais pasākums", ""],
@@ -46,7 +50,7 @@ var T = [
         ["kaut kas", "kautkas", ""],
         ["nezin ko", "nezinko", ""],
         ["diez cik", "diezcik", ""],
-        ["ikviens", "ik viens", ""]
+        ["ikviens", "ik viens", ""],
     ],
     [ // 5
         ["pulkstenis", "pulkstens", ""],
@@ -57,6 +61,8 @@ var T = [
         ["akmens", "akmenis", ""],
         ["ūdens", "ūdenis", ""],
         ["diezgan", "diez gan", ""],
+        ["negribu vis", "negribu viss", ""],
+        ["spirgts", "spirkts", ""]
     ],
     [ // 6
         ["Saeima", "Saima", ""],
@@ -86,13 +92,20 @@ var T = [
         ["vests", "vezts", ""],
         ["lauzts", "lausts", ""],
         ["lauzdams", "lausdams", ""],
-        ["želatīns", "želantīns", ""]
+        ["želatīns", "želantīns", ""],
+        ["jāskatās filma", "jāskatās filmu"],
+        ["ģenitīvs", "ģenetīvs", ""],
+        ["deminutīvs", "diminutīvs", ""]
     ],
     [ // 8
         ["fotografēt", "fotogrāfēt", ""],
         ["fotogrāfija", "fotografija", ""],
         ["Maijai Bunkui", "Maijai Bunkai", "Kam? (Maija Bunkus)"],
         ["Annai Tellui", "Annai Tellusai", "Kam? (Anna Tellus)"],
-        
+        ["dzelzceļš", "dzelzsceļš", ""],
+        ["dzelzsrūda", "dzelzsrūda", ""],
+        ["jāsāk ēst tomātus", "jāsāk ēst tomātus", ""],
+        ["abonements", "abonaments", ""],
+        ["vakuums", "vakums", ""]
     ],
 ];
