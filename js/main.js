@@ -45,7 +45,7 @@ function nextLevel(){
     }
     updateBar();
 
-    if(lvl>1){
+    if(lvl>0){
         $(".lvl-round").addClass("shake-it");
         setTimeout(function(){
             $(".lvl-round").removeClass("shake-it");
