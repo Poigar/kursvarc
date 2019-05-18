@@ -62,7 +62,8 @@ var T = [
         ["ūdens", "ūdenis", ""],
         ["diezgan", "diez gan", ""],
         ["negribu vis", "negribu viss", ""],
-        ["spirgts", "spirkts", ""]
+        ["spirgts", "spirkts", ""],
+        ["viņa zina", "viņa zin", ""]
     ],
     [ // 6
         ["Saeima", "Saima", ""],
