@@ -31,6 +31,11 @@ function generateNextTask(){
 function updateBar(){
     document.getElementById("level-bar").style.width = (score*100.0/scoreNeeded[lvl]) + "%";
     document.getElementById("level-bar").style.boxShadow = "0px 0px " + score*20.0/scoreNeeded[lvl] +  "px " + levelColors[lvl];
+    if( levelColors[lvl][0]!='#' ){
+        document.getElementById("level-bar").style.backgroundImage = "URL('" + levelColors[lvl] + "')";
+    } else {
+        document.getElementById("level-bar").style.backgroundImage = "none";
+    }
 }
 
 function nextLevel(){
