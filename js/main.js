@@ -39,6 +39,10 @@ function nextLevel(){
         flag[i] = 0;
     }
     updateBar();
+
+    if(lvl>0){
+        playLevelup();
+    }
 }
 
 function startGame(){
@@ -46,11 +50,15 @@ function startGame(){
     fadeTo("game","menu");
     currentSection = "game";
 
+    playClick();
+
     nextLevel();
     generateNextTask();
 }
 
 function toggleOptions(){
+    playClick();
+
     if(currentSection=="menu"){
         fadeTo("options","menu");
     }
@@ -70,6 +78,7 @@ function choose(x){
         setTimeout(function(){
             document.getElementById("choose" + x).style.backgroundColor = "#fafafa";
         }, 300);
+        playCorrect();
     } else {
         score = Math.max(0, score-1);
         console.log("wrong");
@@ -79,7 +88,7 @@ function choose(x){
             //document.getElementById("level-bar-container").style.backgroundColor = "#fafafa";
             document.getElementById("choose" + x).style.backgroundColor = "#fafafa";
         }, 300);
-
+        playWrong();
     }
 
     console.log(flag);
@@ -126,9 +135,8 @@ $(document).ready(function(){
 
     $(".checkbox").click(function(){
 
-        // if(getOption("music")==false){
-        //     stopMusic();
-        // }
+
+        playClick();
 
         $(this).toggleClass("checkbox--enabled");
         var optionData = $(this).data("option");
@@ -140,6 +148,18 @@ $(document).ready(function(){
             gameData["options"][optionData] = false;
         }
 
+        if(getOption("music")==false){
+            stopMusic();
+        }else{
+            playMusic();
+        }
+
+        if(getOption("sound")==false){
+            muteSound();
+        }else{
+            unmuteSound();
+        }
+
         setData();
     });
 
@@ -147,9 +167,11 @@ $(document).ready(function(){
         if (e.key === "Escape") {
             if(currentSection=="game"){
                 fadeTo("menu","game");
+                playClick();
             }
             if(currentSection=="options"){
                 fadeTo("menu","options");
+                playClick();
             }
         }
     });
