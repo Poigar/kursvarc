@@ -370,15 +370,19 @@ h1 {
   font-size: 8vw; }
 
 .play-btn {
-  width: 5vw;
-  height: 5vw;
+  width: 7vw;
+  height: 7vw;
   display: block;
   margin: auto;
   border-radius: 50%;
   border: none;
   color: white;
-  font-size: 2em;
-  background: linear-gradient(to right, #ff5100, #df7919); }
+  background: linear-gradient(to right, #ff5100, #df7919);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .play-btn i {
+    font-size: 2.2vw; }
 
 .settings-btn {
   background: none;
@@ -389,7 +393,9 @@ h1 {
   color: #e15100; }
 
 .instructions {
-  color: #9c9c9c; }
+  color: #9c9c9c;
+  margin: 2vw 0;
+  margin-bottom: 6vw; }
 
 #game {
   position: absolute;
