@@ -1,11 +1,8 @@
-var optionKeys = ["arrows","sound","music","time"]
-
 var gameData = {
     "options": {
         "arrows": true,
         "sound": true,
         "music": true,
-        "time": false
     }
 }
 

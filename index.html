@@ -24,7 +24,9 @@
     <div id="menu" class="section flexbox-center">
         <div class="wrapper flexbox-middle">
             <h1 class="animated rubberBand">KursVarc</h1>
-            <p class="instructions">Tavs uzdevums ir izvēlēties pareizo atbilžu variantu, spiežot uz bultiņām vai izmantojot pa labi un pa kreisi taustiņus</p>
+            <p class="instructions">Tavs uzdevums ir izvēlēties pareizo atbilžu variantu, spiežot uz bultiņām vai izmantojot taustiņus <b><i class="fas fa-arrow-left"></i></b> un <b><i class="fas fa-arrow-right"></i></b><br>
+            Nospied <b>ESC</b>, lai beigtu spēli
+            </p>
 
             <button class="play-btn" onclick="startGame();"><i class="fas fa-play"></i></button>
         </div>
@@ -61,7 +63,6 @@
             <div class="option"><div class="checkbox arrows-option" data-option="arrows"></div> Rādīt bultiņas</div>
             <div class="option"><div class="checkbox sound-option" data-option="sound"></div> Iespējot skaņu</div>
             <div class="option"><div class="checkbox music-option" data-option="music"></div> Iespējot fona mūziku</div>
-            <div class="option"><div class="checkbox time-option" data-option="time"></div> Papildu laiks</div>
         </div>
     </div>
 
@@ -81,6 +82,7 @@
 
 
 
+    <script src="js/audio.js"></script>
     <script src="js/tasks.js"></script>
     <script src="js/transitions.js"></script>
     <script src="js/data.js"></script>

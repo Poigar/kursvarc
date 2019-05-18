@@ -1,5 +1,3 @@
-
-var game = false;
 var lvl = -1;
 var task = -1;
 var correctSide = -1;
@@ -44,9 +42,9 @@ function nextLevel(){
 }
 
 function startGame(){
-    $("#game").removeClass("hidden");
-    $("#menu").addClass("hidden");
-    game = true;
+
+    fadeTo("game","menu");
+    currentSection = "game";
 
     nextLevel();
     generateNextTask();
@@ -63,7 +61,7 @@ function toggleOptions(){
 }
 
 function choose(x){
-    if( !game ) return;
+    if( !currentSection=="game" ) return;
 
     if( correctSide == x ){
         score++;
@@ -116,12 +114,13 @@ function init(){
     if(getOption("arrows")) $(".arrows-option").addClass("checkbox--enabled");
     if(getOption("sound")) $(".sound-option").addClass("checkbox--enabled");
     if(getOption("music")) $(".music-option").addClass("checkbox--enabled");
-    if(getOption("time")) $(".time-option").addClass("checkbox--enabled");
 }
 
 $(document).ready(function(){
 
     init();
+
+    playMusic();
 
     $(".checkbox").click(function(){
 
@@ -135,6 +134,17 @@ $(document).ready(function(){
         }
 
         setData();
+    });
+
+    $(document).keyup(function(e) {
+        if (e.key === "Escape") {
+            if(currentSection=="game"){
+                fadeTo("menu","game");
+            }
+            if(currentSection=="options"){
+                fadeTo("menu","options");
+            }
+        }
     });
 
 });

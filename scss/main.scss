@@ -16,6 +16,10 @@ body{
     height: 100vh;
     overflow: hidden;
     font-family: "Ubuntu", Arial;
+
+    b{
+        color: lighten($orange,20);
+    }
 }
 
 #navbar{

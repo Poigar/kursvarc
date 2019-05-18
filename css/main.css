@@ -2932,6 +2932,8 @@ body {
   height: 100vh;
   overflow: hidden;
   font-family: "Ubuntu", Arial; }
+  body b {
+    color: #ff8a48; }
 
 #navbar .settings-btn {
   background: none;
