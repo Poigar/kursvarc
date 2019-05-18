@@ -1,1 +1,3 @@
-// Main JS file
+var g = new Game();
+
+g.helloWorld();
