@@ -11,15 +11,23 @@ h1{
 }
 
 .play-btn{
-    width: 5vw;
-    height: 5vw;
+    width: 7vw;
+    height: 7vw;
     display: block;
     margin: auto;
     border-radius: 50%;
     border: none;
     color: white;
-    font-size: 2em;
     background: $orange_gradient;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    i{
+        font-size: 2.2vw;
+        // border: 1px solid red;
+    }
 }
 
 .settings-btn{
@@ -33,4 +41,6 @@ h1{
 
 .instructions{
     color: rgb(156, 156, 156);
+    margin: 2vw 0;
+    margin-bottom: 6vw;
 }
