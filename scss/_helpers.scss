@@ -1,0 +1,33 @@
+// Reusable helper classes
+
+.section{
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    max-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.flexbox-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexbox-middle{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.grey{background-color: grey !important;}
+.red{background-color: red !important;}
+.blue{background-color: blue !important;}
+.green{background-color: green !important;}

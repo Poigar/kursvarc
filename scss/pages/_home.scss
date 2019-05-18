@@ -1,0 +1,23 @@
+// HOME
+
+h1{
+    color: rgb(255, 115, 0);
+    font-weight: bold;
+    font-size: 8vw;
+    background: $gradient--orange;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play-btn{
+    width: 5vw;
+    height: 5vw;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border: none;
+    background: $gradient--orange;
+    color: white;
+    font-size: 2em;
+}
