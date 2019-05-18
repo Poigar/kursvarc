@@ -46,6 +46,13 @@ function nextLevel(){
     updateBar();
 
     if(lvl>0){
+        $(".lvl-round").addClass("shake-it");
+        setTimeout(function(){
+            $(".lvl-round").removeClass("shake-it");
+        }, 3000);
+    }
+
+    if(lvl>0){
         playLevelup();
     }
 }
