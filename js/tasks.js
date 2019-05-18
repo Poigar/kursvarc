@@ -94,7 +94,7 @@ var T = [
         ["lauzts", "lausts", ""],
         ["lauzdams", "lausdams", ""],
         ["želatīns", "želantīns", ""],
-        ["jāskatās filma", "jāskatās filmu"],
+        ["jāskatās filma", "jāskatās filmu", ""],
         ["ģenitīvs", "ģenetīvs", ""],
         ["deminutīvs", "diminutīvs", ""]
     ],
@@ -104,8 +104,8 @@ var T = [
         ["Maijai Bunkui", "Maijai Bunkai", "Kam? (Maija Bunkus)"],
         ["Annai Tellui", "Annai Tellusai", "Kam? (Anna Tellus)"],
         ["dzelzceļš", "dzelzsceļš", ""],
-        ["dzelzsrūda", "dzelzsrūda", ""],
-        ["jāsāk ēst tomātus", "jāsāk ēst tomātus", ""],
+        ["dzelzsrūda", "dzelzrūda", ""],
+        ["jāsāk ēst tomātus", "jāsāk ēst tomāti", ""],
         ["abonements", "abonaments", ""],
         ["vakuums", "vakums", ""]
     ],
