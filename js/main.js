@@ -37,6 +37,7 @@ function nextLevel(){
     lvl++;
     tasksUsed = 0;
     score = 0;
+    document.getElementById("level-display").innerHTML = lvl + 1;
     document.getElementById("level-bar").style.backgroundColor = levelColors[lvl];
     document.getElementById("level-bar").style.boxShadow = "0px 0px 0px " + levelColors[lvl];
     for(var i = 0; i<T[lvl].length; i++){
