@@ -1,3 +1,1 @@
-var g = new Game();
-
-g.helloWorld();
+alert(hello);
