@@ -34,7 +34,8 @@ var T = [
     [ // 4
         ["nākamais pasākums", "nākošais pasākums", ""],
         ["košs", "kožs", ""],
-        ["pašreiz", "patreiz", ""]
+        ["pašreiz", "patreiz", ""],
+        ["pēdiņas", "ķepiņas", 'Kā sauc šo — „” ?']
     ],
     [ // 5
         ["pulkstenis", "pulkstens", ""],
