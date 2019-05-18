@@ -8,6 +8,8 @@ var flag = [];
 var tasksUsed = 0;
 var score = 0;
 
+var currentSection = "menu";
+
 function generateNextTask(){
     
     do{
@@ -51,7 +53,12 @@ function startGame(){
 }
 
 function toggleOptions(){
-    fadeTo("A");
+    if(currentSection=="menu"){
+        fadeTo("options","menu");
+    }
+    else if(currentSection=="options"){
+        fadeTo("menu","options");
+    }
     // $("#options").toggleClass("hidden");
 }
 

@@ -17,3 +17,31 @@ body{
     overflow: hidden;
     font-family: "Ubuntu", Arial;
 }
+
+#navbar{
+    .settings-btn{
+        background: none;
+        border: none;
+        position: absolute;
+        top: 2vw;
+        left: 2vw;
+        color: $orange;
+        transition: transform 0.15s ease;
+        // border: 1px solid red;
+
+        i{
+            font-size: 1.8vw;
+        }
+        z-index: 10;
+
+        &:hover{
+            opacity: 0.7;
+            transform: rotateZ(45deg);
+        }
+
+
+        &:active {
+            transform: rotateZ(45deg) scale(1.2);
+        }
+    }
+}

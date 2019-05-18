@@ -15,6 +15,12 @@
 </head>
 <body>
     
+    <div id="navbar">
+        <button onclick="toggleOptions()" class="settings-btn">
+            <i  class="fas fa-cog"></i>
+        </button>
+    </div>
+
     <div id="menu" class="section flexbox-center">
         <div class="wrapper flexbox-middle">
             <h1 class="animated rubberBand">KursVarc</h1>
@@ -23,9 +29,6 @@
             <button class="play-btn" onclick="startGame();"><i class="fas fa-play"></i></button>
         </div>
 
-        <button onclick="toggleOptions()" class="settings-btn">
-            <i  class="fas fa-cog"></i>
-        </button>
 
         <p class="copyright">Made by Reinards and Niks</p>
     </div>
@@ -79,7 +82,7 @@
 
 
     <script src="js/tasks.js"></script>
-    <script src="js/variables.js"></script>
+    <script src="js/transitions.js"></script>
     <script src="js/data.js"></script>
     <script src="js/main.js"></script>
 </body>
