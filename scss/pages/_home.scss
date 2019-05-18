@@ -4,10 +4,6 @@ h1{
     color: rgb(255, 115, 0);
     font-weight: bold;
     font-size: 8vw;
-    background: $gradient--orange;
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .play-btn{
@@ -17,7 +13,16 @@ h1{
     margin: auto;
     border-radius: 50%;
     border: none;
-    background: $gradient--orange;
     color: white;
     font-size: 2em;
+
+    @extend %orange_gradient;
+}
+
+.settings-btn{
+    background: none;
+    border: none;
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
 }
