@@ -79,7 +79,7 @@ function gameOver(){
 }
 
 function restartGame(){
-    window.location.reload();
+    fadeTo("menu","game");
 }
 
 function toggleOptions(){
