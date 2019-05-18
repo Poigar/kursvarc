@@ -31,7 +31,7 @@ function updateBar(){
 
 function nextLevel(){
     lvl++;
-    tasksLeft = T[lvl].length;
+    tasksUsed = 0;
     score = 0;
     document.getElementById("level-bar").style.backgroundColor = levelColors[lvl];
     document.getElementById("level-bar").style.boxShadow = "0px 0px 0px " + levelColors[lvl];
@@ -76,6 +76,8 @@ function choose(x){
         }, 300);
 
     }
+
+    console.log(flag);
 
     updateBar();
     

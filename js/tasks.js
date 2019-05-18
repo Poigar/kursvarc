@@ -29,7 +29,7 @@ var T = [
         ["pie manis", "pie manīm", ""],
         ["pie tevis", "pie tevīm", ""],
         ["nulle", "nule", "0"],
-        ["logs", "loks", ""]
+        ["logs", "loks", ""],
         ["numurs", "nummurs", ""],
         ["treniņš", "trenniņš", ""],
         ["treneris", "trenneris", ""]
@@ -58,7 +58,7 @@ var T = [
         ["Saeima", "Saima", ""],
         ["Saeima", "Saema", ""],
         ["programmēšana", "programēšana", ""],
-        ["flomāsters", "flomasters", ""]
+        ["flomāsters", "flomasters", ""],
         ["spilgts", "spilkts", ""],
         ["nule", "nulle", '"tikko"'],
     ],
