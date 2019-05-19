@@ -10,13 +10,13 @@ var wrongSound = new Audio("audio/wrong.wav");
 wrongSound.volume = 0.7;
 
 var levelupSound = new Audio("audio/levelup.wav");
-levelupSound.volume = 0.7;
+levelupSound.volume = 0.3;
 
 function playMusic(){
 
     if(backgroundMusic === null || backgroundMusic === undefined){
         backgroundMusic = new Audio("audio/bg_music.mp3");
-        backgroundMusic.volume = 0.3;
+        backgroundMusic.volume = 0.5;
         backgroundMusic.loop = true;
         backgroundMusic.play();
     }else{
