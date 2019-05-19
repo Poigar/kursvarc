@@ -81,7 +81,10 @@ var T = [
         ["miljons", "milijons", ""],
         ["skrieniet šurp!", "skrienat šurp!", ""],
         ["nāciet te!", "nākiet te!", ""],
-        ["apsveikuma kartīte", "apsveikuma kartiņa", ""]
+        ["apsveikuma kartīte", "apsveikuma kartiņa", ""],
+        ["palaikam skrienu", "pa laikam skrienu", ""],
+        ["paretam dejoju", "pa retam dejoju", ""]
+        ["pusčetri", "pus četri"]
     ],
     [ // 6
         ["Saeima", "Saima", ""],
