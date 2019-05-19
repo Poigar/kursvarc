@@ -19,7 +19,7 @@ body{
     font-family: "Ubuntu", Arial;
 
     b{
-        color: lighten($orange,20);
+        color: $blue;
     }
 }
 
@@ -30,7 +30,7 @@ body{
         position: absolute;
         top: 2vw;
         left: 2vw;
-        color: $orange;
+        color: $blue;
         transition: transform 0.15s ease;
         // border: 1px solid red;
 

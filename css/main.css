@@ -2806,12 +2806,12 @@ textarea {
   background-color: green !important; }
 
 #menu h1, #game_over h1 {
-  background: linear-gradient(to right, #ff5100, #df7919);
+  background: linear-gradient(to right, #2567a0, #589bd6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 #menu h1 {
-  color: #ff7300;
+  color: #589bd6;
   font-weight: bold;
   font-size: 8vw; }
 #menu .play-btn {
@@ -2822,7 +2822,7 @@ textarea {
   border-radius: 50%;
   border: none;
   color: white;
-  background: linear-gradient(to right, #ff5100, #df7919);
+  background: linear-gradient(to right, #2567a0, #589bd6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2839,7 +2839,7 @@ textarea {
   position: absolute;
   bottom: 2vw;
   left: 2vw;
-  color: #e15100; }
+  color: #589bd6; }
 @media screen and (max-width: 765px) {
   #menu h1 {
     font-size: 16vw; }
@@ -2992,7 +2992,7 @@ textarea {
   #options .checkbox {
     width: 2vw;
     height: 2vw;
-    border: 1px solid #e15100;
+    border: 1px solid #589bd6;
     margin-right: 1vw;
     border-radius: 2px;
     cursor: pointer;
@@ -3000,7 +3000,8 @@ textarea {
     #options .checkbox:active {
       transform: scale(1.2); }
   #options .checkbox--enabled {
-    background-color: #e15100; }
+    background-color: #589bd6;
+    box-shadow: inset 0px 0px 0px 2px white; }
   @media screen and (max-width: 768px) {
     #options .option {
       font-size: 5vw;
@@ -3182,23 +3183,23 @@ textarea {
 #game_over {
   flex-direction: column; }
   #game_over h1 {
-    color: #ff7300;
+    color: #589bd6;
     font-weight: bold;
     font-size: 6vw; }
   #game_over button {
     margin-top: 5vw;
-    border: 2px solid #e15100;
+    border: 2px solid #589bd6;
     padding: 1vw 2.5vw;
     font-size: 1.8em;
     background: none;
-    color: #e15100;
+    color: #589bd6;
     transition: 0.25s ease;
     border-radius: 50%;
     width: 7vw;
     height: 7vw; }
     #game_over button:hover {
       color: white;
-      background: #e15100; }
+      background: #589bd6; }
 
 body {
   width: 100vw;
@@ -3206,7 +3207,7 @@ body {
   overflow: hidden;
   font-family: "Ubuntu", Arial; }
   body b {
-    color: #ff8a48; }
+    color: #589bd6; }
 
 #navbar .settings-btn {
   background: none;
@@ -3214,7 +3215,7 @@ body {
   position: absolute;
   top: 2vw;
   left: 2vw;
-  color: #e15100;
+  color: #589bd6;
   transition: transform 0.15s ease;
   z-index: 10; }
   #navbar .settings-btn i {

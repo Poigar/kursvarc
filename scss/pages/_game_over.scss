@@ -3,21 +3,21 @@
 #game_over{
     flex-direction: column;
     h1{
-        color: rgb(255, 115, 0);
+        color: $blue;
         font-weight: bold;
         font-size: 6vw;
     
-        @extend %orange_gradient_text;
+        @extend %blue_gradient_text;
         
     }
 
     button{
         margin-top: 5vw;
-        border: 2px solid $orange;
+        border: 2px solid $blue;
         padding: 1vw 2.5vw;
         font-size: 1.8em;
         background: none;
-        color: $orange;
+        color: $blue;
         transition: 0.25s ease;
         border-radius: 50%;
         width: 7vw;
@@ -25,7 +25,7 @@
 
         &:hover{
             color: white;
-            background: $orange;
+            background: $blue;
         }
     }
 }

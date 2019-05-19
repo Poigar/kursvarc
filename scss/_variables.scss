@@ -3,14 +3,23 @@
 $orange: rgb(225,81,0);
 $gray: lighten(gray,10);
 
+$blue: #589bd6;
+$blue--dark: #2567a0;
+
 $background: #fafafa;
 $borders: #dadada;
 
 $orange_gradient: linear-gradient(to right, rgb(255, 81, 0), rgb(223, 121, 25));
+$blue_gradient: linear-gradient(to right, $blue--dark, $blue);
 
 %orange_gradient_text {
-    background: linear-gradient(to right, rgb(255, 81, 0), rgb(223, 121, 25));
+    background: $orange_gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+%blue_gradient_text {
+    background: $blue_gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

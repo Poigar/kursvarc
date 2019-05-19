@@ -2,12 +2,12 @@
 
 #menu{
     h1{
-        color: rgb(255, 115, 0);
+        color: $blue;
         font-weight: bold;
         font-size: 8vw;
     
     
-        @extend %orange_gradient_text;
+        @extend %blue_gradient_text;
         
     }
     
@@ -19,7 +19,7 @@
         border-radius: 50%;
         border: none;
         color: white;
-        background: $orange_gradient;
+        background: $blue_gradient;
         
         display: flex;
         align-items: center;
@@ -49,7 +49,7 @@
         position: absolute;
         bottom: 2vw;
         left: 2vw;
-        color: $orange;
+        color: $blue;
     }
 
     @media screen and (max-width: 765px){
