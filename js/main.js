@@ -83,7 +83,10 @@ function previousLevel(){
 
     lvl--;
 
-    if(lvl==-1) gameOver(false);
+    if(lvl==-1){
+        gameOver(false);
+        return false;
+    }
 
     tasksUsed = 0;
     score = scoreNeeded[lvl];
