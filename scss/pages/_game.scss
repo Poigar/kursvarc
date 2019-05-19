@@ -43,7 +43,9 @@
             background-size: 100vw;
             background-position: 0px center;
 
-            transition: width 0.5s ease-out, box-shadow 0.5s ease-out;
+            &.animated{
+                transition: width 0.7s cubic-bezier(.46,.2,.51,1.23), box-shadow 0.5s ease-out;
+            }
         }
     }
 

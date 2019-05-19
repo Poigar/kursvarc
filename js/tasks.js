@@ -1,6 +1,6 @@
-var levelColors = ["#43ACBB", "#43BB52", "#D1C42A", "#D92F2F", "#C0319B", "img/kalni.jpeg", "img/pilseta.jpg", "img/ezerpilseta.jpeg"]
-//var scoreNeeded = [3, 6, 6, 7, 8, 8, 9, 10];
-var scoreNeeded = [2, 2, 2, 2, 2, 4, 4, 4];
+var levelColors = ["#43ACBB", "#43BB52", "#F2CF15", "#D92F2F", "#C0319B", "img/kalni.jpeg", "img/pilseta.jpg", "img/ezerpilseta.jpeg"]
+var scoreNeeded = [3, 6, 6, 7, 8, 8, 9, 10];
+//var scoreNeeded = [2, 2, 2, 2, 2, 4, 4, 4];
 
 var T = [
     [ // 1 
@@ -28,7 +28,9 @@ var T = [
         ["acis", "ači", ""],
         ["gulbis", "gūlbis", ""],
         ["saldējums", "saldeijums", ""],
-        ["ledusskapis", "leduskapis", ""]
+        ["ledusskapis", "leduskapis", ""],
+        ["finišs", "finišš", ""],
+        ["oranžs", "orandžs", ""]
     ],
     [ // 3
         ["pie manis", "pie manīm", ""],
@@ -41,7 +43,10 @@ var T = [
         ["jebkas", "jeb kas", ""],
         ["tikko", "tiko", ""],
         ["vislabākais", "viss labākais", ""],
-        ["visskaistākais", "viskaistākais", ""]
+        ["visskaistākais", "viskaistākais", ""],
+        ["neesmu", "nēesmu", ""],
+        ["divpadsmit", "divpatsmit", ""],
+        ["manis dēļ", "dēļ manis", ""]
     ],
     [ // 4
         ["nākamais pasākums", "nākošais pasākums", ""],
@@ -52,6 +57,13 @@ var T = [
         ["nezin ko", "nezinko", ""],
         ["diez cik", "diezcik", ""],
         ["ikviens", "ik viens", ""],
+        ["šajā mēnesī", "šai mēnesī", ""],
+        ["piezvanīt", "pazvanīt", ""],
+        ["varbūt jāpaēd", "var būt jāpaēd", ""],
+        ["droši vien tā ir", "drošvien tā ir", ""],
+        ["jāpaliek tepat", "jāpaliek te pat", ""],
+        ["labs sāls", "laba sāls", ""],
+        ["ģērbties", "ģerpties", ""]
     ],
     [ // 5
         ["pulkstenis", "pulkstens", ""],
@@ -64,7 +76,12 @@ var T = [
         ["diezgan", "diez gan", ""],
         ["negribu vis", "negribu viss", ""],
         ["spirgts", "spirkts", ""],
-        ["viņa zina", "viņa zin", ""]
+        ["viņa zina", "viņa zin", ""],
+        ["mēs zinām", "mēs zinam", ""],
+        ["miljons", "milijons", ""],
+        ["skrieniet šurp!", "skrienat šurp!", ""],
+        ["nāciet te!", "nākiet te!", ""],
+        ["apsveikuma kartīte", "apsveikuma kartiņa", ""]
     ],
     [ // 6
         ["Saeima", "Saima", ""],
@@ -79,7 +96,12 @@ var T = [
         ["eņģes", "enģes", ""],
         ["patstāvīgs cilvēks", "pastāvīgs cilvēks", ""],
         ["pastāvīgas sūdzības", "patstāvīgas sūdzības", ""],
-        ["akmens siena", "akmeņa siena", ""]
+        ["akmens siena", "akmeņa siena", ""],
+        ["atvilktne", "atvilkne", ""],
+        ["aizkari", "aizskari", ""],
+        ["oriģināls", "orģināls", ""],
+        ["it kā labi", "itkā labi", ""],
+        ["piegrieztne", "piegriezne", ""]
     ],
     [ // 7
         ["Pēterim Liepam", "Pēterim Liepai", "Kam? (Pēteris Liepa)"],
@@ -98,17 +120,32 @@ var T = [
         ["želatīns", "želantīns", ""],
         ["jāskatās filma", "jāskatās filmu", ""],
         ["ģenitīvs", "ģenetīvs", ""],
-        ["deminutīvs", "diminutīvs", ""]
+        ["deminutīvs", "diminutīvs", ""],
+        ["aplaudēt", "aplaudēt", ""],
+        ["pulksten divos", "pulkstens divos", ""]
     ],
     [ // 8
         ["fotografēt", "fotogrāfēt", ""],
         ["fotogrāfija", "fotografija", ""],
         ["Maijai Bunkui", "Maijai Bunkai", "Kam? (Maija Bunkus)"],
         ["Annai Tellui", "Annai Tellusai", "Kam? (Anna Tellus)"],
+        ["Jurim Garam", "Jurim Garajam", "Kam? (Juris Garš)"],
         ["dzelzceļš", "dzelzsceļš", ""],
         ["dzelzsrūda", "dzelzrūda", ""],
         ["jāsāk ēst tomātus", "jāsāk ēst tomāti", ""],
         ["abonements", "abonaments", ""],
-        ["vakuums", "vakums", ""]
+        ["vakuums", "vakums", ""],
+        ["atceras", "atcerās", ""],
+        ["vēlas", "vēlās", ""],
+        ["vairāk nekā 3 ogas", "vairāk kā 3 ogas", ""],
+        ["mazāk kā 5 mašīnas", "mazāk nekā 5 mašīnas", ""],
+        ["tēmēklis", "tēmeklis", ""],
+        ["moku kaķi", "mocu kaķi", ""],
+        ["loki lapu!", "loci lapu!", ""],
+        ["neparko nepiekāpšos", "ne par ko nepiekāpšos", ""],
+        ["ne par ko nedomāju", "neparko nedomāju"],
+        ["viņš soļo pa priekšu", "viņš soļo papriekšu"],
+        ["papriekš izmācies", "pa priekšu izmācies"],
+        ["koks salūst", "koks salūzt", ""]
     ],
 ];
