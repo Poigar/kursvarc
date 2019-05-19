@@ -2858,14 +2858,17 @@ textarea {
       font-size: 8vw; } }
 @media screen and (min-width: 765px) {
   #menu h1 {
-    font-size: 12vw; }
+    font-size: 10vw; }
   #menu .copyright, #menu .instructions {
-    font-size: 1.4em;
+    font-size: 1.0em;
     max-width: 80vw; } }
 @media screen and (min-width: 1440px) {
   #menu .copyright, #menu .instructions {
     font-size: 1.7em;
     max-width: 100vw; } }
+
+p {
+  color: #a14984; }
 
 @keyframes shakeLevel {
   0% {
@@ -3191,13 +3194,14 @@ textarea {
     margin-top: 5vw;
     border: 2px solid #589bd6;
     padding: 1vw 2.5vw;
-    font-size: 1.8em;
     background: none;
     color: #589bd6;
     transition: 0.25s ease;
     border-radius: 50%;
     width: 7vw;
     height: 7vw; }
+    #game_over button i {
+      font-size: 1.8vw; }
     #game_over button:hover {
       color: white;
       background: #589bd6; }

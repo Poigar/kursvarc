@@ -81,10 +81,10 @@
 
     @media screen and (min-width: 765px){
         h1{
-            font-size: 12vw;
+            font-size: 10vw;
         }
         .copyright,.instructions{
-            font-size: 1.4em;
+            font-size: 1.0em;
             max-width: 80vw;
         }
     }
@@ -95,4 +95,9 @@
             max-width: 100vw;
         }
     }
+}
+
+p{
+
+    color: #a14984;
 }

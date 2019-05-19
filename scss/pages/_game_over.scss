@@ -15,13 +15,17 @@
         margin-top: 5vw;
         border: 2px solid $blue;
         padding: 1vw 2.5vw;
-        font-size: 1.8em;
+        // font-size: 1.8em;
         background: none;
         color: $blue;
         transition: 0.25s ease;
         border-radius: 50%;
         width: 7vw;
         height: 7vw;
+
+        i{
+            font-size: 1.8vw;
+        }
 
         &:hover{
             color: white;
