@@ -18,7 +18,19 @@ function playMusic(){
         backgroundMusic = new Audio("audio/bg_music.mp3");
         backgroundMusic.volume = 0.5;
         backgroundMusic.loop = true;
-        backgroundMusic.play();
+        var promise = backgroundMusic.play();
+
+        if (promise !== undefined) {
+        promise.then(_ => {
+            // Autoplay started!
+            console.log("Autoplay started");
+        }).catch(error => {
+            console.log("Error");
+            // Autoplay was prevented.
+            // Show a "Play" button so that user can start playback.
+        });
+    }
+        // backgroundMusic.play();
     }else{
         backgroundMusic.play();
     }
