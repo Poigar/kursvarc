@@ -121,7 +121,7 @@ var T = [
         ["jāskatās filma", "jāskatās filmu", ""],
         ["ģenitīvs", "ģenetīvs", ""],
         ["deminutīvs", "diminutīvs", ""],
-        ["aplaudēt", "aplaudēt", ""],
+        ["aplaudēt", "applaudēt", ""],
         ["pulksten divos", "pulkstens divos", ""]
     ],
     [ // 8
@@ -143,9 +143,9 @@ var T = [
         ["moku kaķi", "mocu kaķi", ""],
         ["loki lapu!", "loci lapu!", ""],
         ["neparko nepiekāpšos", "ne par ko nepiekāpšos", ""],
-        ["ne par ko nedomāju", "neparko nedomāju"],
-        ["viņš soļo pa priekšu", "viņš soļo papriekšu"],
-        ["papriekš izmācies", "pa priekšu izmācies"],
+        ["ne par ko nedomāju", "neparko nedomāju", ""],
+        ["viņš soļo pa priekšu", "viņš soļo papriekšu", ""],
+        ["papriekš izmācies", "pa priekšu izmācies", ""],
         ["koks salūst", "koks salūzt", ""]
     ],
 ];
