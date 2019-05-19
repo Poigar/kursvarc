@@ -8,6 +8,7 @@ function fadeTo(page, from){
         if(page=="menu" || page=="options"){
             $("#navbar").show();
             $("#game_over").addClass("hidden");
+            $("#game_lost").addClass("hidden");
             $(".pyro").addClass("hidden");
         }else{
             $("#navbar").hide();

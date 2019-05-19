@@ -2805,7 +2805,7 @@ textarea {
 .green {
   background-color: green !important; }
 
-#menu h1, #game_over h1 {
+#menu h1, #game_over h1, #game_lost h1 {
   background: linear-gradient(to right, #2567a0, #589bd6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
@@ -3184,13 +3184,13 @@ p {
   80%, 99.9% {
     margin-top: 30%;
     margin-left: 80%; } }
-#game_over {
+#game_over, #game_lost {
   flex-direction: column; }
-  #game_over h1 {
+  #game_over h1, #game_lost h1 {
     color: #589bd6;
     font-weight: bold;
     font-size: 6vw; }
-  #game_over button {
+  #game_over button, #game_lost button {
     margin-top: 5vw;
     border: 2px solid #589bd6;
     padding: 1vw 2.5vw;
@@ -3200,9 +3200,9 @@ p {
     border-radius: 50%;
     width: 7vw;
     height: 7vw; }
-    #game_over button i {
+    #game_over button i, #game_lost button i {
       font-size: 1.8vw; }
-    #game_over button:hover {
+    #game_over button:hover, #game_lost button:hover {
       color: white;
       background: #589bd6; }
 
