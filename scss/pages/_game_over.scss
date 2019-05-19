@@ -1,6 +1,6 @@
 @import "../fireworks";
 
-#game_over{
+#game_over, #game_lost{
     flex-direction: column;
     h1{
         color: $blue;

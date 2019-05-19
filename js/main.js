@@ -114,7 +114,7 @@ function gameOver(win){
         $("#game_over").removeClass("hidden");
         $(".pyro").removeClass("hidden");
     } else {
-        alert("zaudēji, muļķis!");
+        $("#game_lost").removeClass("hidden");
     }
 }
 
